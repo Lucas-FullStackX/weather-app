@@ -1,0 +1,46 @@
+.card-title {
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+.card-body a {
+  color: black;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+}
+.card-body a:hover, .card-body a:focus {
+  color: black;
+  background-size: 100% 2px;
+}
+#closeIcon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.card-body {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+.card {
+  margin: 20px;
+  width: 18rem;
+  background: rgba( 255, 255, 255, 0.20 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13.0px );
+-webkit-backdrop-filter: blur( 13.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+h5{
+  text-decoration: none;
+}
+@media only screen and (max-width: 500px) {
+   
+  .row div{
+    width:50%;
+  }
+}

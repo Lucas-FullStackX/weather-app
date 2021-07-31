@@ -1,0 +1,24 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.any{
+  background: rgba( 255, 255, 255, 0.20 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13.0px );
+-webkit-backdrop-filter: blur( 13.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color:#fff;
+}
+@media only screen and (max-width: 500px) {
+   
+  body{
+    background: rgb(59, 193, 202);
+  min-height: 100%;
+  margin: 0 auto;
+    background-image:none;
+    background-repeat: repeat;
+  }
+}
