@@ -51,7 +51,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Route path={URL + "/"} render={() => <Nav onSearch={onSearch} />} />
+      <Route path="/" render={() => <Nav onSearch={onSearch} />} />
       <Route path={URL + "/about"} component={About} />
       <Route
         path={URL + "/"}
