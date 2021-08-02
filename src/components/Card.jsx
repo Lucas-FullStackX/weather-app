@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
+const URL = process.env.PUBLIC_URL;
 
 export default function Card({ min, max, name, img, onClose, id }) {
   return (
@@ -11,7 +12,7 @@ export default function Card({ min, max, name, img, onClose, id }) {
         </button>
       </div>
       <div className="card-body">
-        <Link to={`/ciudad/${id}`}>
+        <Link to={`${URL}/ciudad/${id}`}>
           <h5 className="card-title">{name}</h5>
         </Link>
         <div className="row">

@@ -3,11 +3,12 @@ import SearchBar from "./SearchBar.jsx";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 import { TiWeatherPartlySunny } from "react-icons/ti";
+const URL = process.env.PUBLIC_URL;
 
 function Nav({ onSearch }) {
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <Link to="/" className="home">
+      <Link to={URL + "/"} className="home">
         <TiWeatherPartlySunny />
       </Link>
       <Link className="about" to="/about">
