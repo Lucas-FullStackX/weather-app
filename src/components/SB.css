@@ -1,0 +1,24 @@
+.lens{
+    border-style: none;
+    outline:none;
+    padding: 5px 10px 5px 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.bars{
+    border-style: none;
+    outline:none;
+    padding: 5px 0 5px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+    form{
+        width: 70%;
+        justify-content:right;
+    }
+   .bars{
+       width: 40%;
+   } 
+}

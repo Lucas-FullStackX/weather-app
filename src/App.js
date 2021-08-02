@@ -21,6 +21,10 @@ function App() {
     )
       .then((r) => r.json())
       .then((recurso) => {
+        let city = cities.find((i) => i.name === recurso.name);
+        if (city) {
+          return;
+        }
         if (recurso.main !== undefined) {
           const ciudad = {
             min: celcius(recurso.main.temp_min),

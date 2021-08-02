@@ -10,18 +10,23 @@ html {
   height: 100%;
   width:auto;
   background-size: 100%;
-  background-color: rgb(59, 193, 202)
 }
 body{
   height:100%;
   background-image: url("./img/fondo.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
+background-attachment: fixed
 }
 @media only screen and (max-width: 500px) {
    
   .App{
     height:110%;
     background-color: #00000000;
+  }
+  body{
+    background-image: url("./img/mobile.jpg");
+    background-size: cover;
   }
 }
 

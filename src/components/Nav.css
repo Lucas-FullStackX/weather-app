@@ -16,6 +16,17 @@
   color: rgb(255, 255, 255);
   background-size: 100% 2px;
 }
+.home{
+  text-decoration: none;
+}
+.home svg{
+  text-decoration: none;
+  color:#fff;
+  font-size: 40px;
+}
+.home svg:hover{
+  color: rgb(253, 238, 24);
+}
 @media only screen and (max-width: 500px) {
    
   .navbar{
