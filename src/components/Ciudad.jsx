@@ -8,7 +8,7 @@ export default function Ciudad({ city }) {
         <h2>{city.name}</h2>
         <img
           className="iconoClima"
-          src={`http://openweathermap.org/img/wn/${city.img}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${city.img}@2x.png`}
           width="80"
           height="80"
           alt={city.name}

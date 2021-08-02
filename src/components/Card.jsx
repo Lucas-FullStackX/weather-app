@@ -27,7 +27,7 @@ export default function Card({ min, max, name, img, onClose, id }) {
           <div className="col-sm-4 col-md-4 col-lg-4">
             <img
               className="iconoClima"
-              src={`http://openweathermap.org/img/wn/${img}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${img}@2x.png`}
               width="80"
               height="80"
               alt={name}
