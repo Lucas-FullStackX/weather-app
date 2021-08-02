@@ -8,7 +8,7 @@ import Cards from "./components/Cards.jsx";
 import About from "./components/About.jsx";
 import Ciudad from "./components/Ciudad.jsx";
 const apiKey = process.env.REACT_APP_KEY;
-
+const URL = process.env.PUBLIC_URL;
 function App() {
   const [cities, setCities] = useState([]);
   function onClose(id) {
@@ -51,8 +51,8 @@ function App() {
   }
   return (
     <div className="App">
-      <Route path="/" render={() => <Nav onSearch={onSearch} />} />
-      <Route path="/about" component={About} />
+      <Route path={URL + "/"} render={() => <Nav onSearch={onSearch} />} />
+      <Route path={URL + "/about"} component={About} />
       <Route
         path="/"
         exact
@@ -60,7 +60,7 @@ function App() {
       />
       <Route
         exact
-        path="/ciudad/:Id"
+        path={URL + "/ciudad/:Id"}
         render={({ match }) => (
           <Ciudad
             city={cities.filter((c) => c.id === parseInt(match.params.Id))[0]}
