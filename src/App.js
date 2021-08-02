@@ -54,7 +54,7 @@ function App() {
       <Route path={URL + "/"} render={() => <Nav onSearch={onSearch} />} />
       <Route path={URL + "/about"} component={About} />
       <Route
-        path="/"
+        path={URL + "/"}
         exact
         render={() => <Cards cities={cities} onClose={onClose} />}
       />

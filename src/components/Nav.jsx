@@ -11,7 +11,7 @@ function Nav({ onSearch }) {
       <Link to={URL + "/"} className="home">
         <TiWeatherPartlySunny />
       </Link>
-      <Link className="about" to="/about">
+      <Link className="about" to={URL + "/about"}>
         <span>About</span>
       </Link>
       <SearchBar onSearch={onSearch} />
